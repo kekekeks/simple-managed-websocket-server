@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleHttpServer", "SimpleHttpServer\SimpleHttpServer.csproj", "{29112AA6-E2C0-4EF2-A4B1-36D40D44EB3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "Sandbox\Sandbox.csproj", "{7C6F31B5-5B42-466D-B770-B24FE1A118F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29112AA6-E2C0-4EF2-A4B1-36D40D44EB3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29112AA6-E2C0-4EF2-A4B1-36D40D44EB3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29112AA6-E2C0-4EF2-A4B1-36D40D44EB3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29112AA6-E2C0-4EF2-A4B1-36D40D44EB3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C6F31B5-5B42-466D-B770-B24FE1A118F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C6F31B5-5B42-466D-B770-B24FE1A118F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C6F31B5-5B42-466D-B770-B24FE1A118F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C6F31B5-5B42-466D-B770-B24FE1A118F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

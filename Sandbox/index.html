@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+        <meta charset="utf-8"/>
+    <title></title>
+
+    <script type="text/javascript">
+        function log(text) {
+            var newdiv = document.createElement("pre");
+            newdiv.innerText = text;
+            document.getElementById("messages").appendChild(newdiv);
+        }
+
+        var ws = null;
+        document.addEventListener("DOMContentLoaded", function() {
+            if ("WebSocket" in window) {
+                // Let us open a web socket
+                ws = new WebSocket("ws://"+window.location.host+"/ws");
+                ws.onopen = function() {
+                    log("Connected");
+                    ws.send("Sup");
+                };
+                ws.onmessage = function(evt) {
+                    log(evt.data);
+                };
+                
+                ws.onclose = function() {
+                    log("Closed");
+                };
+            } else {
+                // The browser doesn't support WebSocket
+                alert("WebSocket NOT supported by your Browser!");
+            }
+        });
+
+        function send() {
+            var txt = document.getElementById("message").value;
+            ws.send(txt);
+            document.getElementById("message").value='';
+            return false;
+        }
+
+
+    </script>
+</head>
+<body>
+<div id="messages">
+
+</div>
+
+<textarea id="message"></textarea>
+<form>
+    <input type="submit" onclick=" javascript: send(); return false;" />
+</form>
+</body>
+</html>                                                                                                                                                                                                                                
